@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"></node>
+
+<node pkg="my_turtle_controller" type="my_turtle_pose_control" 
+name="my_turtle_pose_control" output="screen">
+
+</node>
+
+</launch>

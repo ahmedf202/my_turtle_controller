@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+<param name="desired_x_distance_in_m" value="8.0"/>
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"></node>
+<!--<node pkg="my_turtle_controller" type="draw_circle" name="draw_circle"></node>
+
+<node pkg="my_turtle_controller" type="my_turtle_pose_subscriber" 
+name="my_turtle_pose_subscriber" output="screen">
+-->
+
+<node pkg="my_turtle_controller" type="my_turtle_pose_control" 
+name="my_turtle_pose_control" output="screen">
+
+<!--<param name="param-name" value="param-value" />
+nh.getParam("desired_x_distance_in_m", desired_x_dist);
+
+<param name="desired_x_distance_in_m", value="8.0"/>
+-->
+</node>
+
+</launch>
